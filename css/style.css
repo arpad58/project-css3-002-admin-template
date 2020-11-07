@@ -1,9 +1,14 @@
 body {
-    
-    
+    --main__card--blue: rgb(0,123,255);
+    --main__card--yellow: rgb(255,193,7);
+    --main__card--green: rgb(40,167,69);
+    --main__card--red: rgb(220,53,69);
 }
 
-/** header   */
+/** hesder - Hozz létre az oldalon egy header elemet.
+A css osztálya "header--dark" legyen.
+Háttérszín: 51,57,64
+Kitöltőszín: 236,236,236  */
 
 .header--dark {
     background-color: rgb(51, 57, 64);
@@ -20,33 +25,47 @@ body {
 }
 
 .header__search {
-    
+    display: inline;
     flex: 30%;
 }
 
 
 
-/** main   */
+/** main - Hozd létre main elemet, a header alá. 
+Legyen benne egy aside elem.
+Mellette egy section elem, "content" oszállyal. */
 main {
-    
+  display: flex;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
 }
 
-.main__nav {
-    background-color: rgb(33,37,41);
-}
 
-/** Aside   */
+
+/** Aside - Legyen benne egy nav elem, "main__nav" oszállyal.
+Legyen a háttérszíne 33,37,41
+Legyen benne egy ul elem, "nav__ul" osztállyal.  */
+
 .main__aside {
+   background-color: rgb(33,37,41);
     width: 20%;
     height: auto;
     float: left;
+    box-sizing: border-box;
+}
+
+.main__nav {
+    
+}
+
+.nav__ul {
+
 }
 
 
-
-
-
-/** Section   */
+/** Section - Legyen a tetején h1 elem "Dashboard" tartalommal.
+Alatta legyen egy breadcrumb, ez egy div legyen, "main__breadcrumb" osztállyal.
+Háttérszíne 233,236,239 legyen.  */
 .content {
     width: 80%;
     float: right;
@@ -65,7 +84,7 @@ main {
 
 
 .main__cards {
-  background-color: aqua;
+  
   box-sizing: border-box;
   margin-top: 20px;
   padding: 0;
@@ -78,13 +97,13 @@ main {
     float: left;
     width: 25%;
     padding: 20px;
-    background-color: blue;
+    
 }
 
 .card__top {
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem;
-    background-color: cornflowerblue;
+    
     padding: 20px;
     font-size: 1.2rem;
 }
@@ -92,6 +111,22 @@ main {
 .card__bottom {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: .25rem;
-    background-color: darkgoldenrod;
+    
     padding: 20px;
+}
+
+.main__card--blue {
+    background-color: var(--main__card--blue);
+}
+
+.main__card--yellow {
+    background-color: var(--main__card--yellow);
+}
+
+.main__card--green {
+    background-color: var(--main__card--green);
+}
+
+.main__card--red {
+    background-color: var(--main__card--red);
 }
