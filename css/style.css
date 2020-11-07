@@ -3,6 +3,8 @@ body {
     --main__card--yellow: rgb(255,193,7);
     --main__card--green: rgb(40,167,69);
     --main__card--red: rgb(220,53,69);
+    padding: 2rem;
+    font-family: sans-serif;
 }
 
 /** hesder - Hozz létre az oldalon egy header elemet.
@@ -22,6 +24,7 @@ Kitöltőszín: 236,236,236  */
     font-size: 1.25rem;
     display: inline;
     flex: 70%;
+    padding-left: 1.2rem;
 }
 
 .header__search {
@@ -38,6 +41,9 @@ main {
   display: flex;
   flex-wrap: nowrap;
   box-sizing: border-box;
+  min-height: 35rem;
+  border-bottom: rgb(184, 184, 184) solid .2px;
+  border-right: rgb(184, 184, 184) solid .2px;
 }
 
 
@@ -59,7 +65,14 @@ Legyen benne egy ul elem, "nav__ul" osztállyal.  */
 }
 
 .nav__ul {
+ color: rgb(255, 255, 255);
+ line-height: 150%;
+ font-size: 1.2rem;
+ list-style: none;
+}
 
+li {
+    
 }
 
 
@@ -69,49 +82,59 @@ Háttérszíne 233,236,239 legyen.  */
 .content {
     width: 80%;
     float: right;
-    padding-left: 15px;
-    box-sizing: border-box;
     
+    box-sizing: border-box;  
 }
 
-
+h1 {
+    padding-left: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+    font-size: 3rem;
+}
 
 .main__breadcrumb {
     background-color: rgb(233,236,239);
-    border-radius: .5rem;
+    border-radius: .25rem;
     padding: 1rem 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
+h4{
+    margin: 0;
+    color: rgb(187, 187, 187);
+}
 
 .main__cards {
-  
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1.5rem;
   box-sizing: border-box;
-  margin-top: 20px;
-  padding: 0;
+  
+  padding: 1.5rem;
   
 }
 
 .main__card {
     box-sizing: border-box;
-    margin: 0;
-    float: left;
-    width: 25%;
-    padding: 20px;
+   
+    color: rgb(236,236,236);
     
 }
 
 .card__top {
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem;
-    
-    padding: 20px;
-    font-size: 1.2rem;
+    border-bottom: rgb(165, 165, 165) solid .1px;
+    padding: 1.5rem;
+    font-size: 1rem;
 }
 
 .card__bottom {
-    border-bottom-left-radius: 5px;
+    border-bottom-left-radius: .25rem;
     border-bottom-right-radius: .25rem;
-    
+    font-size: .8rem;
     padding: 20px;
 }
 
