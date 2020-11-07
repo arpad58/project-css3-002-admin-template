@@ -30,6 +30,27 @@ Kitöltőszín: 236,236,236  */
 .header__search {
     display: inline;
     flex: 30%;
+    margin: auto;
+}
+
+.search__input {
+    border-top-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: .75rem .375rem;
+    font-size: 1.2rem;
+    
+}
+
+.search__btn {
+    background-color: rgb(0,123,255);
+    height: 1.95rem;
+    padding: 0;
+    border: 0;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    height: 3rem;
+    width: 3rem;
+    margin-left: -4px;
 }
 
 
@@ -126,7 +147,7 @@ h4{
 .card__top {
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem;
-    border-bottom: rgb(165, 165, 165) solid .1px;
+    border-bottom: .5px solid rgba(0, 0, 0, 0.06);
     padding: 1.5rem;
     font-size: 1rem;
 }
