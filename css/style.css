@@ -117,11 +117,11 @@ Legyen benne egy ul elem, "nav__ul" osztállyal.  */
 }
 
 .gray {
-    color: rgb(126, 126, 126);
+    color: rgb(134, 134, 134);
 }
 
-.serif {
-    
+.darkgray {
+    color: rgb(102, 102, 102); 
 }
 
 li {
