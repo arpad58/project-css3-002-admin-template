@@ -14,17 +14,17 @@ Kitöltőszín: 236,236,236  */
 
 .header--dark {
     background-color: rgb(51, 57, 64);
+    box-sizing: border-box;
     color: rgb(236,236,236);
     display: flex;
     flex-wrap: nowrap;
-    box-sizing: border-box;
 }
 
 .header__title {
     font-size: 1.25rem;
-    display: inline;
     flex: 20%;
-    padding-left: 1.2rem;
+    display: inline;
+    padding-left: 1.25rem;
 }
 
 .header__bars {
@@ -47,23 +47,30 @@ Kitöltőszín: 236,236,236  */
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
     padding: .75rem .375rem;
-    font-size: 1.2rem;
-    border: 1px solid snow;
-    
+    font-size: 1rem;
+    border: 2px solid rgb(255, 255, 255);
+    transition: border-color .15s;
+    outline: none;
+    margin: .556rem 0;
 }
+
+.search__input:focus {
+    border: 2px solid rgb(128, 189, 255);
+  }
 
 .search__btn {
     background-color: rgb(0,123,255);
     border-top-right-radius: .25rem;
     border-bottom-right-radius: .25rem;
-    height: 1.95rem;
     padding: 0;
     border: 0;
     color: rgb(255, 255, 255);
-    font-size: 1.5rem;
-    height: 3rem;
-    width: 3rem;
-    margin-left: -.25rem;
+    font-size: 1.2rem;
+    height: 2.9rem;
+    width: 2.9rem;
+    margin-left: -.28rem;
+    margin-bottom: .5rem;
+    margin-top: .56;    
 }
 
 .header__user {
@@ -77,8 +84,6 @@ Kitöltőszín: 236,236,236  */
     margin-top: .6rem;
 }
 
-
-
 /** main - Hozd létre main elemet, a header alá. 
 Legyen benne egy aside elem.
 Mellette egy section elem, "content" oszállyal. */
@@ -91,8 +96,6 @@ main {
   border-right: rgb(184, 184, 184) solid .2px;
 }
 
-
-
 /** Aside - Legyen benne egy nav elem, "main__nav" oszállyal.
 Legyen a háttérszíne 33,37,41
 Legyen benne egy ul elem, "nav__ul" osztállyal.  */
@@ -102,13 +105,7 @@ Legyen benne egy ul elem, "nav__ul" osztállyal.  */
     width: 20%;
     height: auto;
     float: left;
-    box-sizing: border-box;
-
-    
-}
-
-.main__nav {
-   
+    box-sizing: border-box;  
 }
 
 .nav__ul {
@@ -129,11 +126,6 @@ Legyen benne egy ul elem, "nav__ul" osztállyal.  */
 .darkgray {
     color: rgb(102, 102, 102); 
 }
-
-li {
-    
-}
-
 
 /** Section - Legyen a tetején h1 elem "Dashboard" tartalommal.
 Alatta legyen egy breadcrumb, ez egy div legyen, "main__breadcrumb" osztállyal.
@@ -170,17 +162,13 @@ h4{
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 1.5rem;
-  box-sizing: border-box;
-  
-  padding: 1.5rem;
-  
+  box-sizing: border-box; 
+  padding: 1.5rem; 
 }
 
 .main__card {
     box-sizing: border-box;
-   
-    color: rgb(236,236,236);
-    
+    color: rgb(236,236,236);   
 }
 
 .card__top {
