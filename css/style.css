@@ -91,7 +91,7 @@ main {
   display: flex;
   flex-wrap: nowrap;
   box-sizing: border-box;
-  min-height: 35rem;
+  min-height: 37rem;
   border-bottom: rgb(184, 184, 184) solid .2px;
   border-right: rgb(184, 184, 184) solid .2px;
 }
